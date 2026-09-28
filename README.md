@@ -187,20 +187,6 @@ All parameters are documented in the module docstrings and in
 
 ---
 
-## Citation
-
-If you find this project useful in your research, please consider citing it:
-
-```bibtex
-@misc{hdit2026,
-  title        = {HDiT: HyperSpectral Latent Diffusion for Feature Extraction and Classification},
-  author       = {HDiT contributors},
-  year         = {2026},
-  howpublished = {\url{https://github.com/<your-account>/HDiT}}
-}
-```
-
----
 
 ## Acknowledgements
 
