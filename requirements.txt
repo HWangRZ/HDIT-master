@@ -1,0 +1,19 @@
+# Core deep-learning stack
+torch>=2.1.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# HuggingFace ecosystem
+diffusers>=0.27.0
+timm>=0.9.0
+accelerate>=0.27.0
+
+# Classical ML / metrics
+scikit-learn>=1.3.0
+
+# Image / IO utilities
+opencv-python>=4.8.0
+h5py>=3.9.0
+
+# Progress bars
+tqdm>=4.66.0

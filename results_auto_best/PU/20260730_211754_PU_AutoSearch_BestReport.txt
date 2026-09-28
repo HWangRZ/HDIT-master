@@ -1,0 +1,62 @@
+============================================================
+🏆 WINNER CONFIGURATION: t[0,20,40,60,81]_l[3]
+============================================================
+
+--- 0. Hardware & Performance Metrics ---
+[Parameters]
+  - VAE Parameters         : 1.35 M
+  - DiT Parameters         : 16.80 M
+  - Classifier Parameters  : 1.0181 M
+[FLOPs (单次前向传播)]
+  - VAE FLOPs              : 514,064,384.0 (0.51G)
+  - DiT FLOPs              : 704,839,680.0 (0.70G)
+[Time]
+  - Feature Extract Time   : 22.31 Seconds
+  - DiT Inference Time     : 13.7429 Seconds (Total), 8.20 ms (Avg per call)
+  - Classifier Inference   : 2.48 ms (Avg per Test Set)
+[GPU Memory]
+  - Peak VRAM (Extraction) : 347.39 MB
+  - Peak VRAM (Train/Test) : 824.16 MB
+
+--- 1. Overall Metrics (Mean ± Std over 10 seeds) ---
+OA:    84.3313% ± 3.5684%
+AA:    85.9762% ± 2.4484%
+Kappa: 0.7967  ± 0.0431
+
+--- 2. Per-Class Accuracy (Mean ± Std) ---
+Asphalt                  : 77.96% ± 9.37%
+Meadows                  : 86.23% ± 9.04%
+Gravel                   : 82.81% ± 7.39%
+Trees                    : 83.14% ± 7.10%
+Painted metal sheets     : 98.90% ± 1.04%
+Bare Soil                : 83.61% ± 10.81%
+Bitumen                  : 98.25% ± 2.16%
+Self-Blocking Bricks     : 78.71% ± 13.53%
+Shadows                  : 84.16% ± 10.81%
+
+--- 3. Best Seed Detailed Report (Highest OA run) ---
+                      precision    recall  f1-score   support
+
+             Asphalt     0.9383    0.8141    0.8718      6626
+             Meadows     0.9269    0.9772    0.9514     18644
+              Gravel     0.7970    0.9226    0.8552      2094
+               Trees     0.8822    0.8300    0.8553      3059
+Painted metal sheets     0.9103    0.9993    0.9527      1340
+           Bare Soil     0.9589    0.8039    0.8746      5024
+             Bitumen     0.8882    0.9955    0.9388      1325
+Self-Blocking Bricks     0.7716    0.8537    0.8106      3677
+             Shadows     0.9252    0.7749    0.8434       942
+
+            accuracy                         0.9045     42731
+           macro avg     0.8887    0.8857    0.8838     42731
+        weighted avg     0.9078    0.9045    0.9036     42731
+
+
+============================================================
+🚀 LEADERBOARD (All Configs)
+============================================================
+Rank | Config                    | Mean OA    | Std Dev    | Cls Params(M)   | Runs (OA)
+-----------------------------------------------------------------------------------------------
+1    | t[0,20,40,60,81]_l[3]     | 84.33%    | 3.57%    | 1.0181          | [78.5,82.3,87.3,83.1,82.3,90.4,88.0,81.9,87.7,81.7]
+2    | t[0,20,40,60,81]_l[4]     | 84.18%    | 3.88%    | 1.0181          | [78.5,81.6,85.3,85.8,81.0,89.5,88.5,83.2,89.1,79.2]
+3    | t[0,20,40,60,81]_l[5]     | 83.96%    | 3.88%    | 1.0181          | [78.4,84.4,82.1,81.7,80.2,90.9,90.0,83.3,86.7,81.9]
